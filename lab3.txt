@@ -1,0 +1,9 @@
+Q1: How much did a parallel code speed up a sequential code?
+Sp = Ts / Tp
+p = # of processors
+Ts = execution time of the sequential code
+Tp = execution time of the parallel code with p processors
+
+Answer:
+
+Sp = Ts / Tp = 97.086 / 30.172 = 3.218
