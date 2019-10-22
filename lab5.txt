@@ -1,0 +1,9 @@
+Question:
+Try to tune the model's parameters. If you increase the eta or the maximum depth, what will happen? Can you explain your reasoning? Are there other ways to improve the model's performance?
+
+Answer:
+If changed maximum depth from 300 to 600, the shape of the result will be more flat.
+If changed eta from 0.1 to 0.2, the shape of the result will be more flat and thiner.
+This happened because of changing the parameters, the maximum depth means the data structure-tree's depth has changed, and the eta means the size of each node changed.
+The shape is changing because deeper trees caused clustered training set, so does the eta.
+For other ways to improve the model's performance, I would suggest try to import more data into the training set, because more data can make the models developed more stable to ensure there is less mistakes implemented by the whole process, and the result would be more convincing.
