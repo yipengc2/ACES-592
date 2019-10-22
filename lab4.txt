@@ -1,0 +1,30 @@
+Question 1
+We have used the "foreach" library to perform parallelization in this excerise, are there any other libraries that can do the same thing? List at least 3 other different parallelization libraries.
+
+Answer:
+parallel library, snow library, multicore library.
+
+Question 2
+Pick one of the parallelization libraries and give it a try in this excerise by only using 4 cores.
+
+Answer:
+example by using parallel library:
+func <- function(x) {
+    n = 1
+    raw <- x
+    while (x > 1) {
+        x <- ifelse(x%%2==0,x/2,3*x+1)
+        n = n + 1
+    }
+    return(c(raw,n))
+}
+ 
+library(parallel)
+
+system.time({
+    x <- 1:Markets1
+    cl <- makeCluster(4)  
+    results <- parLapply(cl,x,func) 
+    res.df <- do.call('rbind',results)
+    stopCluster(cl) 
+})
