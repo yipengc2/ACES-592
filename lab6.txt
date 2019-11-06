@@ -1,0 +1,25 @@
+Question1:
+Which the four methods has the best distribution? Why? What assumptions of OLS and DS are violated in the naive models? 
+Answer:
+Naive Double Selection method has the best distribution because steady and lowest error rate compared to other three methods. 
+As the result of naive OLS models and naive DS models, we can easily find that the double selection model has less errors but the OLS model has less p-vlaue.
+
+Question2:
+Why does the overspecified OLS have a lower type 1 error rate? 
+Answer:
+It is because type1 errors' consists of type one error(1) and no type one error(0), which is different from type2 errors. Only one type error can affect overspecified OLS model's performance.
+
+Question3:
+The type 2 error rate is calculated incorrectly. Describe how would you correct it? 
+Answer:
+I will consider other potential existence like type one error and another is not error as a consideration. This can make the calculation more like reality and can make the results more convincing.
+
+Question4:
+Create a correlation between the Treatment and the independent variables. How does this change the OLS and DS coefficents? What other methods can be used to deal with this specification?
+Answer:
+the treatment and the independent variables can affect the OLS and DS coefficents because more than one variables have some relations to affects each other to be as factors rather than one specific factor leads to the result.
+
+Question5:
+Change the model or data generating process so that an assumption of double selection is violated. How does this affect the ability of the model to draw valid inference?
+Answer:
+If I change the parameters of double selection model such as the number of rows and number of columns, the result calculated by the model will be totally different because such changes will violate the polynomials' coefficients, which will change the final tendency line.
